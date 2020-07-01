@@ -43,7 +43,7 @@ namespace MyBody
                         Venta.cantidad = int.Parse(lstProductos.Items[i].SubItems[3].Text);
                         Venta.punitario = float.Parse(lstProductos.Items[i].SubItems[4].Text);
                         Venta.total = float.Parse(lstProductos.Items[i].SubItems[5].Text);
-                        Venta.pendiente = false;
+                        Venta.pendiente = lstProductos.Items[i].Checked;
                         if (Venta.pendiente)
                         {
                             Venta.cobrado = 0;
@@ -337,6 +337,14 @@ namespace MyBody
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void optPendiente_Click(object sender, EventArgs e)
+        {
+            if (lstProductos.SelectedItems.Count > 0)
+            {
+                lstProductos.SelectedItems[0].Checked = true;
+            }
         }
     }
 }

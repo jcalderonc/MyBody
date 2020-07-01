@@ -181,7 +181,7 @@
             this.tbcInventario.Location = new System.Drawing.Point(3, 3);
             this.tbcInventario.Name = "tbcInventario";
             this.tbcInventario.SelectedIndex = 0;
-            this.tbcInventario.Size = new System.Drawing.Size(790, 532);
+            this.tbcInventario.Size = new System.Drawing.Size(822, 532);
             this.tbcInventario.TabIndex = 0;
             this.tbcInventario.SelectedIndexChanged += new System.EventHandler(this.tbcInventario_SelectedIndexChanged);
             // 
@@ -191,7 +191,7 @@
             this.tpgProductos.Location = new System.Drawing.Point(4, 22);
             this.tpgProductos.Margin = new System.Windows.Forms.Padding(0);
             this.tpgProductos.Name = "tpgProductos";
-            this.tpgProductos.Size = new System.Drawing.Size(782, 506);
+            this.tpgProductos.Size = new System.Drawing.Size(814, 506);
             this.tpgProductos.TabIndex = 1;
             this.tpgProductos.Text = "Edición";
             this.tpgProductos.UseVisualStyleBackColor = true;
@@ -208,7 +208,7 @@
             this.tblEdicion.Name = "tblEdicion";
             this.tblEdicion.RowCount = 1;
             this.tblEdicion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblEdicion.Size = new System.Drawing.Size(782, 506);
+            this.tblEdicion.Size = new System.Drawing.Size(814, 506);
             this.tblEdicion.TabIndex = 20;
             // 
             // tblModificar
@@ -218,7 +218,7 @@
             this.tblModificar.Controls.Add(this.gbxProducto, 0, 0);
             this.tblModificar.Controls.Add(this.gbxInventario, 0, 1);
             this.tblModificar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblModificar.Location = new System.Drawing.Point(401, 3);
+            this.tblModificar.Location = new System.Drawing.Point(433, 3);
             this.tblModificar.Name = "tblModificar";
             this.tblModificar.RowCount = 2;
             this.tblModificar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.4142F));
@@ -568,7 +568,7 @@
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
             this.pnlLogo.Margin = new System.Windows.Forms.Padding(0);
             this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(398, 506);
+            this.pnlLogo.Size = new System.Drawing.Size(430, 506);
             this.pnlLogo.TabIndex = 16;
             // 
             // btnPicture
@@ -591,7 +591,7 @@
             this.tpgExistencias.Location = new System.Drawing.Point(4, 22);
             this.tpgExistencias.Name = "tpgExistencias";
             this.tpgExistencias.Padding = new System.Windows.Forms.Padding(3);
-            this.tpgExistencias.Size = new System.Drawing.Size(782, 506);
+            this.tpgExistencias.Size = new System.Drawing.Size(814, 506);
             this.tpgExistencias.TabIndex = 0;
             this.tpgExistencias.Text = "Productos";
             this.tpgExistencias.UseVisualStyleBackColor = true;
@@ -608,7 +608,7 @@
             this.tblProductos.RowCount = 2;
             this.tblProductos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tblProductos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblProductos.Size = new System.Drawing.Size(776, 500);
+            this.tblProductos.Size = new System.Drawing.Size(808, 500);
             this.tblProductos.TabIndex = 11;
             // 
             // gbxFiltros
@@ -628,7 +628,7 @@
             // 
             // btnDesactivar
             // 
-            this.btnDesactivar.Location = new System.Drawing.Point(740, 11);
+            this.btnDesactivar.Location = new System.Drawing.Point(657, 11);
             this.btnDesactivar.Name = "btnDesactivar";
             this.btnDesactivar.Size = new System.Drawing.Size(72, 23);
             this.btnDesactivar.TabIndex = 16;
@@ -638,7 +638,7 @@
             // 
             // btnActivar
             // 
-            this.btnActivar.Location = new System.Drawing.Point(681, 11);
+            this.btnActivar.Location = new System.Drawing.Point(600, 11);
             this.btnActivar.Name = "btnActivar";
             this.btnActivar.Size = new System.Drawing.Size(55, 23);
             this.btnActivar.TabIndex = 17;
@@ -648,7 +648,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(617, 11);
+            this.btnBuscar.Location = new System.Drawing.Point(536, 11);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(58, 23);
             this.btnBuscar.TabIndex = 2;
@@ -670,7 +670,7 @@
             this.txtCriterio.Location = new System.Drawing.Point(52, 13);
             this.txtCriterio.MaxLength = 100;
             this.txtCriterio.Name = "txtCriterio";
-            this.txtCriterio.Size = new System.Drawing.Size(533, 20);
+            this.txtCriterio.Size = new System.Drawing.Size(469, 20);
             this.txtCriterio.TabIndex = 0;
             // 
             // lstInventario
@@ -694,10 +694,11 @@
             this.lstInventario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstInventario.FullRowSelect = true;
             this.lstInventario.GridLines = true;
+            this.lstInventario.HideSelection = false;
             this.lstInventario.Location = new System.Drawing.Point(3, 53);
             this.lstInventario.MultiSelect = false;
             this.lstInventario.Name = "lstInventario";
-            this.lstInventario.Size = new System.Drawing.Size(770, 444);
+            this.lstInventario.Size = new System.Drawing.Size(802, 444);
             this.lstInventario.SmallImageList = this.imlEstatus;
             this.lstInventario.TabIndex = 0;
             this.lstInventario.UseCompatibleStateImageBehavior = false;
@@ -787,7 +788,7 @@
             this.tpgServicios.Controls.Add(this.tblServicios);
             this.tpgServicios.Location = new System.Drawing.Point(4, 22);
             this.tpgServicios.Name = "tpgServicios";
-            this.tpgServicios.Size = new System.Drawing.Size(782, 506);
+            this.tpgServicios.Size = new System.Drawing.Size(814, 506);
             this.tpgServicios.TabIndex = 2;
             this.tpgServicios.Text = "Servicios";
             this.tpgServicios.UseVisualStyleBackColor = true;
@@ -806,7 +807,7 @@
             this.tblServicios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
             this.tblServicios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblServicios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
-            this.tblServicios.Size = new System.Drawing.Size(782, 506);
+            this.tblServicios.Size = new System.Drawing.Size(814, 506);
             this.tblServicios.TabIndex = 12;
             // 
             // pnlServicios
@@ -873,7 +874,7 @@
             this.gbxFiltroServicio.Dock = System.Windows.Forms.DockStyle.Left;
             this.gbxFiltroServicio.Location = new System.Drawing.Point(3, 3);
             this.gbxFiltroServicio.Name = "gbxFiltroServicio";
-            this.gbxFiltroServicio.Size = new System.Drawing.Size(776, 45);
+            this.gbxFiltroServicio.Size = new System.Drawing.Size(672, 45);
             this.gbxFiltroServicio.TabIndex = 9;
             this.gbxFiltroServicio.TabStop = false;
             this.gbxFiltroServicio.Text = "Filtros";
@@ -899,7 +900,7 @@
             // 
             // btnPrecioServicio
             // 
-            this.btnPrecioServicio.Location = new System.Drawing.Point(739, 11);
+            this.btnPrecioServicio.Location = new System.Drawing.Point(579, 11);
             this.btnPrecioServicio.Name = "btnPrecioServicio";
             this.btnPrecioServicio.Size = new System.Drawing.Size(75, 23);
             this.btnPrecioServicio.TabIndex = 6;
@@ -910,7 +911,7 @@
             // txtPrecioServicio
             // 
             this.txtPrecioServicio.Enabled = false;
-            this.txtPrecioServicio.Location = new System.Drawing.Point(633, 11);
+            this.txtPrecioServicio.Location = new System.Drawing.Point(473, 11);
             this.txtPrecioServicio.Name = "txtPrecioServicio";
             this.txtPrecioServicio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecioServicio.TabIndex = 5;
@@ -918,7 +919,7 @@
             // lblPrecioServicio
             // 
             this.lblPrecioServicio.AutoSize = true;
-            this.lblPrecioServicio.Location = new System.Drawing.Point(558, 16);
+            this.lblPrecioServicio.Location = new System.Drawing.Point(398, 16);
             this.lblPrecioServicio.Name = "lblPrecioServicio";
             this.lblPrecioServicio.Size = new System.Drawing.Size(69, 13);
             this.lblPrecioServicio.TabIndex = 4;
@@ -945,9 +946,10 @@
             this.colFecha});
             this.lstServicios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstServicios.GridLines = true;
+            this.lstServicios.HideSelection = false;
             this.lstServicios.Location = new System.Drawing.Point(3, 54);
             this.lstServicios.Name = "lstServicios";
-            this.lstServicios.Size = new System.Drawing.Size(776, 390);
+            this.lstServicios.Size = new System.Drawing.Size(808, 390);
             this.lstServicios.SmallImageList = this.imlEstatus;
             this.lstServicios.TabIndex = 0;
             this.lstServicios.UseCompatibleStateImageBehavior = false;
@@ -992,7 +994,7 @@
             this.tabVentas.Controls.Add(this.tblVentas);
             this.tabVentas.Location = new System.Drawing.Point(4, 22);
             this.tabVentas.Name = "tabVentas";
-            this.tabVentas.Size = new System.Drawing.Size(782, 506);
+            this.tabVentas.Size = new System.Drawing.Size(814, 506);
             this.tabVentas.TabIndex = 3;
             this.tabVentas.Text = "Ventas";
             this.tabVentas.UseVisualStyleBackColor = true;
@@ -1011,7 +1013,7 @@
             this.tblVentas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.187135F));
             this.tblVentas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.81287F));
             this.tblVentas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
-            this.tblVentas.Size = new System.Drawing.Size(782, 506);
+            this.tblVentas.Size = new System.Drawing.Size(814, 506);
             this.tblVentas.TabIndex = 0;
             // 
             // pnlFiltro
@@ -1025,7 +1027,7 @@
             this.pnlFiltro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlFiltro.Location = new System.Drawing.Point(3, 3);
             this.pnlFiltro.Name = "pnlFiltro";
-            this.pnlFiltro.Size = new System.Drawing.Size(776, 32);
+            this.pnlFiltro.Size = new System.Drawing.Size(808, 32);
             this.pnlFiltro.TabIndex = 0;
             // 
             // btnCortes
@@ -1095,9 +1097,10 @@
             this.colMargen});
             this.lstVenta.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstVenta.GridLines = true;
+            this.lstVenta.HideSelection = false;
             this.lstVenta.Location = new System.Drawing.Point(3, 41);
             this.lstVenta.Name = "lstVenta";
-            this.lstVenta.Size = new System.Drawing.Size(776, 420);
+            this.lstVenta.Size = new System.Drawing.Size(808, 420);
             this.lstVenta.SmallImageList = this.imlEstatus;
             this.lstVenta.TabIndex = 1;
             this.lstVenta.UseCompatibleStateImageBehavior = false;
@@ -1164,7 +1167,7 @@
             this.pnlSum.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlSum.Location = new System.Drawing.Point(3, 467);
             this.pnlSum.Name = "pnlSum";
-            this.pnlSum.Size = new System.Drawing.Size(776, 36);
+            this.pnlSum.Size = new System.Drawing.Size(808, 36);
             this.pnlSum.TabIndex = 2;
             // 
             // txtMargen
@@ -1241,7 +1244,7 @@
             this.pnlControl.Controls.Add(this.btnNuevo);
             this.pnlControl.Controls.Add(this.btnCancelar);
             this.pnlControl.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlControl.Location = new System.Drawing.Point(559, 541);
+            this.pnlControl.Location = new System.Drawing.Point(591, 541);
             this.pnlControl.Name = "pnlControl";
             this.pnlControl.Size = new System.Drawing.Size(234, 29);
             this.pnlControl.TabIndex = 14;
@@ -1258,7 +1261,7 @@
             this.tblInventario.RowCount = 2;
             this.tblInventario.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblInventario.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tblInventario.Size = new System.Drawing.Size(796, 573);
+            this.tblInventario.Size = new System.Drawing.Size(828, 573);
             this.tblInventario.TabIndex = 15;
             // 
             // frmInventario
@@ -1266,7 +1269,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancelar;
-            this.ClientSize = new System.Drawing.Size(796, 573);
+            this.ClientSize = new System.Drawing.Size(828, 573);
             this.Controls.Add(this.tblInventario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

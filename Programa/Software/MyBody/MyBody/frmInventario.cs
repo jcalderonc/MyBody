@@ -585,7 +585,11 @@ namespace MyBody
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
-            
+            if (cmbCorte.SelectedValue == null)
+            {
+                return;
+            }
+
             lstVenta.Items.Clear();
             if (Venta.Vendido(dtpInicioVenta.Value,dtpFinVenta.Value, int.Parse(cmbCorte.SelectedValue.ToString())))
             {

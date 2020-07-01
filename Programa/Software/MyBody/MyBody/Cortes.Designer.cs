@@ -34,6 +34,7 @@
             this.btnBorrar = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
+            this.cbxTodo = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // cbxProductos
@@ -75,7 +76,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(79, 329);
+            this.btnOK.Location = new System.Drawing.Point(165, 324);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(78, 23);
             this.btnOK.TabIndex = 5;
@@ -83,11 +84,23 @@
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
+            // cbxTodo
+            // 
+            this.cbxTodo.AutoSize = true;
+            this.cbxTodo.Location = new System.Drawing.Point(12, 324);
+            this.cbxTodo.Name = "cbxTodo";
+            this.cbxTodo.Size = new System.Drawing.Size(51, 17);
+            this.cbxTodo.TabIndex = 6;
+            this.cbxTodo.Text = "Todo";
+            this.cbxTodo.UseVisualStyleBackColor = true;
+            this.cbxTodo.CheckedChanged += new System.EventHandler(this.cbxTodo_CheckedChanged);
+            // 
             // Cortes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(255, 364);
+            this.Controls.Add(this.cbxTodo);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnBorrar);
@@ -101,6 +114,7 @@
             this.Text = "Cortes";
             this.Load += new System.EventHandler(this.Cortes_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -111,5 +125,6 @@
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.CheckBox cbxTodo;
     }
 }

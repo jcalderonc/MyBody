@@ -990,10 +990,10 @@ INNER JOIN usuarios ON (usuarios.ID=ventas.ID_usuarios)
                     
                     FROM ventas 
                     INNER JOIN productos ON
-                    (productos.ID=ventas.ID_productos)"+
+                    (productos.ID=ventas.ID_productos)" +
 
-                    " WHERE ventas.ID_socios='" + _ID + "'" + 
-                    (_Pendiente ? " AND ventas.pendiente='1' " : string.Empty)+
+                    " WHERE ventas.ID_socios='" + _ID + "'" +
+                    (_Pendiente ? " AND ventas.pendiente='1' " : string.Empty) +
 
                     @" UNION ALL
                     SELECT 0 AS producto, pagos.ID, pagos.fecha, suscripciones.nombre,pagos.pendiente,pagos.cantidad,pagos.total, 
@@ -1001,10 +1001,11 @@ INNER JOIN usuarios ON (usuarios.ID=ventas.ID_usuarios)
                     
                     FROM pagos 
                     INNER JOIN suscripciones ON
-                    (suscripciones.ID=pagos.ID_suscripciones)"+
+                    (suscripciones.ID=pagos.ID_suscripciones)" +
 
-                    " WHERE pagos.ID_socios='" + _ID + "'" + 
-                    (_Pendiente ? " AND pagos.pendiente='1' " : string.Empty);
+                    " WHERE pagos.ID_socios='" + _ID + "'" +
+                    (_Pendiente ? " AND pagos.pendiente='1' " : string.Empty)+
+                    " ORDER BY fecha DESC ";
                    
             }
             public static string GetSocioByID(int _ID)

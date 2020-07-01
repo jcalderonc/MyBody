@@ -54,6 +54,11 @@ namespace MyBody
         }
         private void cmbCorte_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbCorte.SelectedValue == null)
+            {
+                return;
+            }
+
             int CorteID = (-1);
             int.TryParse(cmbCorte.SelectedValue.ToString(), out CorteID);
 
@@ -132,6 +137,14 @@ namespace MyBody
                 }
             }
             Close();
+        }
+
+        private void cbxTodo_CheckedChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < cbxProductos.Items.Count; i++)
+            {
+                cbxProductos.SetItemChecked(i, cbxTodo.Checked);
+            }
         }
     }
 }

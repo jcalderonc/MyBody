@@ -91,7 +91,7 @@ namespace MyBody
             if (Validar)
             {
                 string Serie=GetMBSN();
-                if (Serie.Contains("CN762064BT002A") || Serie.Contains("PCUZR00WD5O3KD") || Serie.Contains("O.E.M.") || Serie.Contains("MS1C74S13102993") || Serie.Contains("1999900005826") || Serie.Contains("PFMKE058J11074"))
+                if (Serie.Contains("058321098769912211310221811527720761722070047084381144144317365") || Serie.Contains("303066330424667487084597432330842009973080819573036510134799525"))
                 {
                     return;
                 }
@@ -102,7 +102,11 @@ namespace MyBody
 El derecho de autor se basa en la idea de un derecho personal del autor, fundado en una forma de identidad entre el autor y su creación. El derecho moral está constituido como emanación de la persona del autor: reconoce que la obra es expresión de la persona del autor y así se le protege.
 
 La protección del copyright se limita estrictamente a la obra, sin considerar atributos morales del autor en relación con su obra, excepto la paternidad; no lo considera como un autor propiamente tal, pero tiene derechos que determinan las modalidades de utilización de una obra.
-", "Copia no autorizada", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+ID:"+Serie, "Copia no autorizada", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+                    System.Windows.Forms.Clipboard.SetText(Serie);
+
 
                     Application.Exit();
                 }
@@ -112,14 +116,18 @@ La protección del copyright se limita estrictamente a la obra, sin considerar a
 
         public static string GetMBSN()
         {
-            //Getting list of motherboards 
-            ManagementObjectCollection mbCol = new ManagementClass("Win32_BaseBoard").GetInstances();
-            //Enumerating the list 
-            ManagementObjectCollection.ManagementObjectEnumerator mbEnum = mbCol.GetEnumerator();
-            //Move the cursor to the first element of the list (and most probably the only one) 
-            mbEnum.MoveNext();
-            //Getting the serial number of that specific motherboard 
-            return ((ManagementObject)(mbEnum.Current)).Properties["SerialNumber"].Value.ToString();
+            ManagementScope Scope;
+            Scope = new ManagementScope("\\\\.\\ROOT\\cimv2");
+            Scope.Connect();
+            ObjectQuery Query = new ObjectQuery("SELECT OfflineInstallationId FROM SoftwareLicensingProduct");
+            ManagementObjectSearcher Searcher = new ManagementObjectSearcher(Scope, Query);
+
+            foreach (ManagementObject WmiObject in Searcher.Get())
+            {
+                if (WmiObject["OfflineInstallationId"] != null)
+                    return WmiObject["OfflineInstallationId"].ToString();
+            }
+            return ""; //Making the compiler happy.
         }
 
         private void btnPicture_Click(object sender, EventArgs e)

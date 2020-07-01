@@ -174,7 +174,7 @@
             this.tbcSocios.Location = new System.Drawing.Point(3, 3);
             this.tbcSocios.Name = "tbcSocios";
             this.tbcSocios.SelectedIndex = 0;
-            this.tbcSocios.Size = new System.Drawing.Size(790, 478);
+            this.tbcSocios.Size = new System.Drawing.Size(944, 478);
             this.tbcSocios.TabIndex = 0;
             this.tbcSocios.SelectedIndexChanged += new System.EventHandler(this.tbcSocios_SelectedIndexChanged);
             // 
@@ -183,7 +183,7 @@
             this.tpgNuevo.Controls.Add(this.tblEdicion);
             this.tpgNuevo.Location = new System.Drawing.Point(4, 22);
             this.tpgNuevo.Name = "tpgNuevo";
-            this.tpgNuevo.Size = new System.Drawing.Size(782, 452);
+            this.tpgNuevo.Size = new System.Drawing.Size(936, 452);
             this.tpgNuevo.TabIndex = 2;
             this.tpgNuevo.Text = "Edición";
             this.tpgNuevo.UseVisualStyleBackColor = true;
@@ -200,7 +200,7 @@
             this.tblEdicion.Name = "tblEdicion";
             this.tblEdicion.RowCount = 1;
             this.tblEdicion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblEdicion.Size = new System.Drawing.Size(782, 452);
+            this.tblEdicion.Size = new System.Drawing.Size(936, 452);
             this.tblEdicion.TabIndex = 23;
             // 
             // imgVideo
@@ -210,7 +210,7 @@
             this.imgVideo.InitialImage = global::MyBody.Properties.Resources.Nuevos;
             this.imgVideo.Location = new System.Drawing.Point(3, 3);
             this.imgVideo.Name = "imgVideo";
-            this.imgVideo.Size = new System.Drawing.Size(412, 446);
+            this.imgVideo.Size = new System.Drawing.Size(566, 446);
             this.imgVideo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgVideo.TabIndex = 1;
             this.imgVideo.TabStop = false;
@@ -246,7 +246,7 @@
             this.gbxNuevo.Controls.Add(this.lblTelefono);
             this.gbxNuevo.Controls.Add(this.txtID);
             this.gbxNuevo.Controls.Add(this.btnGuardar);
-            this.gbxNuevo.Location = new System.Drawing.Point(421, 3);
+            this.gbxNuevo.Location = new System.Drawing.Point(575, 3);
             this.gbxNuevo.Name = "gbxNuevo";
             this.gbxNuevo.Size = new System.Drawing.Size(353, 433);
             this.gbxNuevo.TabIndex = 0;
@@ -518,7 +518,7 @@
             this.tpgLista.Location = new System.Drawing.Point(4, 22);
             this.tpgLista.Name = "tpgLista";
             this.tpgLista.Padding = new System.Windows.Forms.Padding(3);
-            this.tpgLista.Size = new System.Drawing.Size(985, 452);
+            this.tpgLista.Size = new System.Drawing.Size(936, 452);
             this.tpgLista.TabIndex = 0;
             this.tpgLista.Text = "Socios";
             this.tpgLista.UseVisualStyleBackColor = true;
@@ -537,7 +537,7 @@
             this.tblSocios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
             this.tblSocios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblSocios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
-            this.tblSocios.Size = new System.Drawing.Size(979, 446);
+            this.tblSocios.Size = new System.Drawing.Size(930, 446);
             this.tblSocios.TabIndex = 11;
             // 
             // pnlPieSocio
@@ -639,10 +639,11 @@
             this.lstSocios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstSocios.FullRowSelect = true;
             this.lstSocios.GridLines = true;
+            this.lstSocios.HideSelection = false;
             this.lstSocios.Location = new System.Drawing.Point(3, 50);
             this.lstSocios.MultiSelect = false;
             this.lstSocios.Name = "lstSocios";
-            this.lstSocios.Size = new System.Drawing.Size(973, 341);
+            this.lstSocios.Size = new System.Drawing.Size(924, 341);
             this.lstSocios.SmallImageList = this.imlEstatus;
             this.lstSocios.TabIndex = 1;
             this.lstSocios.UseCompatibleStateImageBehavior = false;
@@ -713,7 +714,7 @@
             this.gbxFiltros.Dock = System.Windows.Forms.DockStyle.Left;
             this.gbxFiltros.Location = new System.Drawing.Point(3, 3);
             this.gbxFiltros.Name = "gbxFiltros";
-            this.gbxFiltros.Size = new System.Drawing.Size(973, 41);
+            this.gbxFiltros.Size = new System.Drawing.Size(830, 41);
             this.gbxFiltros.TabIndex = 8;
             this.gbxFiltros.TabStop = false;
             this.gbxFiltros.Text = "Filtros";
@@ -721,7 +722,7 @@
             // chkInactivos
             // 
             this.chkInactivos.AutoSize = true;
-            this.chkInactivos.Location = new System.Drawing.Point(617, 14);
+            this.chkInactivos.Location = new System.Drawing.Point(516, 16);
             this.chkInactivos.Name = "chkInactivos";
             this.chkInactivos.Size = new System.Drawing.Size(106, 17);
             this.chkInactivos.TabIndex = 18;
@@ -731,9 +732,9 @@
             // 
             // btnDesactivar
             // 
-            this.btnDesactivar.Location = new System.Drawing.Point(895, 11);
+            this.btnDesactivar.Location = new System.Drawing.Point(748, 10);
             this.btnDesactivar.Name = "btnDesactivar";
-            this.btnDesactivar.Size = new System.Drawing.Size(72, 23);
+            this.btnDesactivar.Size = new System.Drawing.Size(73, 23);
             this.btnDesactivar.TabIndex = 16;
             this.btnDesactivar.Text = "Desactivar";
             this.btnDesactivar.UseVisualStyleBackColor = true;
@@ -741,7 +742,7 @@
             // 
             // btnActivar
             // 
-            this.btnActivar.Location = new System.Drawing.Point(834, 11);
+            this.btnActivar.Location = new System.Drawing.Point(693, 10);
             this.btnActivar.Name = "btnActivar";
             this.btnActivar.Size = new System.Drawing.Size(55, 23);
             this.btnActivar.TabIndex = 17;
@@ -751,7 +752,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(729, 11);
+            this.btnBuscar.Location = new System.Drawing.Point(629, 10);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(58, 23);
             this.btnBuscar.TabIndex = 2;
@@ -773,7 +774,7 @@
             this.txtCriterio.Location = new System.Drawing.Point(52, 13);
             this.txtCriterio.MaxLength = 100;
             this.txtCriterio.Name = "txtCriterio";
-            this.txtCriterio.Size = new System.Drawing.Size(559, 20);
+            this.txtCriterio.Size = new System.Drawing.Size(452, 20);
             this.txtCriterio.TabIndex = 0;
             // 
             // tpgPagos
@@ -781,7 +782,7 @@
             this.tpgPagos.Controls.Add(this.tblPagos);
             this.tpgPagos.Location = new System.Drawing.Point(4, 22);
             this.tpgPagos.Name = "tpgPagos";
-            this.tpgPagos.Size = new System.Drawing.Size(985, 452);
+            this.tpgPagos.Size = new System.Drawing.Size(936, 452);
             this.tpgPagos.TabIndex = 1;
             this.tpgPagos.Text = "Pagos";
             this.tpgPagos.UseVisualStyleBackColor = true;
@@ -800,7 +801,7 @@
             this.tblPagos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tblPagos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblPagos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tblPagos.Size = new System.Drawing.Size(985, 452);
+            this.tblPagos.Size = new System.Drawing.Size(936, 452);
             this.tblPagos.TabIndex = 6;
             // 
             // lstPagos
@@ -818,10 +819,11 @@
             this.lstPagos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstPagos.FullRowSelect = true;
             this.lstPagos.GridLines = true;
+            this.lstPagos.HideSelection = false;
             this.lstPagos.Location = new System.Drawing.Point(3, 53);
             this.lstPagos.MultiSelect = false;
             this.lstPagos.Name = "lstPagos";
-            this.lstPagos.Size = new System.Drawing.Size(979, 362);
+            this.lstPagos.Size = new System.Drawing.Size(930, 362);
             this.lstPagos.SmallImageList = this.imlEstatus;
             this.lstPagos.TabIndex = 1;
             this.lstPagos.UseCompatibleStateImageBehavior = false;
@@ -967,7 +969,7 @@
             this.tpgInteraccion.Location = new System.Drawing.Point(4, 22);
             this.tpgInteraccion.Name = "tpgInteraccion";
             this.tpgInteraccion.Padding = new System.Windows.Forms.Padding(3);
-            this.tpgInteraccion.Size = new System.Drawing.Size(985, 452);
+            this.tpgInteraccion.Size = new System.Drawing.Size(936, 452);
             this.tpgInteraccion.TabIndex = 3;
             this.tpgInteraccion.Text = "Interacción";
             this.tpgInteraccion.UseVisualStyleBackColor = true;
@@ -981,9 +983,10 @@
             this.lstInteraccion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstInteraccion.FullRowSelect = true;
             this.lstInteraccion.GridLines = true;
+            this.lstInteraccion.HideSelection = false;
             this.lstInteraccion.Location = new System.Drawing.Point(3, 3);
             this.lstInteraccion.Name = "lstInteraccion";
-            this.lstInteraccion.Size = new System.Drawing.Size(979, 446);
+            this.lstInteraccion.Size = new System.Drawing.Size(930, 446);
             this.lstInteraccion.SmallImageList = this.imlEstatus;
             this.lstInteraccion.TabIndex = 0;
             this.lstInteraccion.UseCompatibleStateImageBehavior = false;
@@ -1009,7 +1012,7 @@
             this.tpgAsistencias.Controls.Add(this.splitContainer1);
             this.tpgAsistencias.Location = new System.Drawing.Point(4, 22);
             this.tpgAsistencias.Name = "tpgAsistencias";
-            this.tpgAsistencias.Size = new System.Drawing.Size(985, 452);
+            this.tpgAsistencias.Size = new System.Drawing.Size(936, 452);
             this.tpgAsistencias.TabIndex = 4;
             this.tpgAsistencias.Text = "Asistencias";
             this.tpgAsistencias.UseVisualStyleBackColor = true;
@@ -1027,8 +1030,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.lstAsistencia);
-            this.splitContainer1.Size = new System.Drawing.Size(985, 452);
-            this.splitContainer1.SplitterDistance = 328;
+            this.splitContainer1.Size = new System.Drawing.Size(936, 452);
+            this.splitContainer1.SplitterDistance = 311;
             this.splitContainer1.TabIndex = 0;
             // 
             // pnlAsistencia
@@ -1041,7 +1044,7 @@
             this.pnlAsistencia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlAsistencia.Location = new System.Drawing.Point(0, 0);
             this.pnlAsistencia.Name = "pnlAsistencia";
-            this.pnlAsistencia.Size = new System.Drawing.Size(328, 452);
+            this.pnlAsistencia.Size = new System.Drawing.Size(311, 452);
             this.pnlAsistencia.TabIndex = 0;
             // 
             // txtTotalAsistencia
@@ -1095,9 +1098,10 @@
             this.colApellido});
             this.lstAsistencia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstAsistencia.GridLines = true;
+            this.lstAsistencia.HideSelection = false;
             this.lstAsistencia.Location = new System.Drawing.Point(0, 0);
             this.lstAsistencia.Name = "lstAsistencia";
-            this.lstAsistencia.Size = new System.Drawing.Size(653, 452);
+            this.lstAsistencia.Size = new System.Drawing.Size(621, 452);
             this.lstAsistencia.TabIndex = 0;
             this.lstAsistencia.UseCompatibleStateImageBehavior = false;
             this.lstAsistencia.View = System.Windows.Forms.View.Details;
@@ -1149,7 +1153,7 @@
             this.tblGeneral.RowCount = 2;
             this.tblGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tblGeneral.Size = new System.Drawing.Size(796, 519);
+            this.tblGeneral.Size = new System.Drawing.Size(950, 519);
             this.tblGeneral.TabIndex = 16;
             // 
             // pnlControles
@@ -1157,7 +1161,7 @@
             this.pnlControles.Controls.Add(this.btnNuevo);
             this.pnlControles.Controls.Add(this.btnCancelar);
             this.pnlControles.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlControles.Location = new System.Drawing.Point(571, 487);
+            this.pnlControles.Location = new System.Drawing.Point(725, 487);
             this.pnlControles.Name = "pnlControles";
             this.pnlControles.Size = new System.Drawing.Size(222, 29);
             this.pnlControles.TabIndex = 17;
@@ -1166,7 +1170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 519);
+            this.ClientSize = new System.Drawing.Size(950, 519);
             this.Controls.Add(this.tblGeneral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

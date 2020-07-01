@@ -47,6 +47,7 @@
             this.optImporte = new System.Windows.Forms.ToolStripMenuItem();
             this.optImporteValor = new System.Windows.Forms.ToolStripTextBox();
             this.optEliminar = new System.Windows.Forms.ToolStripMenuItem();
+            this.optPendiente = new System.Windows.Forms.ToolStripMenuItem();
             this.tblVenta = new System.Windows.Forms.TableLayoutPanel();
             this.layCB = new System.Windows.Forms.TableLayoutPanel();
             this.txtSocio = new System.Windows.Forms.TextBox();
@@ -117,6 +118,7 @@
             // 
             // lstProductos
             // 
+            this.lstProductos.CheckBoxes = true;
             this.lstProductos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.colID,
             this.colProducto,
@@ -129,9 +131,10 @@
             this.lstProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstProductos.FullRowSelect = true;
             this.lstProductos.GridLines = true;
+            this.lstProductos.HideSelection = false;
             this.lstProductos.Location = new System.Drawing.Point(3, 54);
             this.lstProductos.Name = "lstProductos";
-            this.lstProductos.Size = new System.Drawing.Size(504, 322);
+            this.lstProductos.Size = new System.Drawing.Size(494, 322);
             this.lstProductos.TabIndex = 22;
             this.lstProductos.UseCompatibleStateImageBehavior = false;
             this.lstProductos.View = System.Windows.Forms.View.Details;
@@ -141,41 +144,42 @@
             // colID
             // 
             this.colID.Text = "ID";
-            this.colID.Width = 0;
+            this.colID.Width = 50;
             // 
             // colProducto
             // 
             this.colProducto.Text = "Producto";
-            this.colProducto.Width = 167;
+            this.colProducto.Width = 180;
             // 
             // colRetornable
             // 
             this.colRetornable.Text = "Retornable";
-            this.colRetornable.Width = 66;
+            this.colRetornable.Width = 1;
             // 
             // colCantidad
             // 
             this.colCantidad.Text = "Cantidad";
-            this.colCantidad.Width = 92;
+            this.colCantidad.Width = 100;
             // 
             // colPrecio
             // 
             this.colPrecio.Text = "Precio";
-            this.colPrecio.Width = 92;
+            this.colPrecio.Width = 100;
             // 
             // colTotal
             // 
             this.colTotal.Text = "Total";
-            this.colTotal.Width = 83;
+            this.colTotal.Width = 100;
             // 
             // Opciones
             // 
             this.Opciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optCantidad,
             this.optImporte,
-            this.optEliminar});
+            this.optEliminar,
+            this.optPendiente});
             this.Opciones.Name = "Opciones";
-            this.Opciones.Size = new System.Drawing.Size(190, 70);
+            this.Opciones.Size = new System.Drawing.Size(190, 92);
             // 
             // optCantidad
             // 
@@ -212,6 +216,13 @@
             this.optEliminar.Text = "Eliminar seleccionado";
             this.optEliminar.Click += new System.EventHandler(this.optEliminar_Click);
             // 
+            // optPendiente
+            // 
+            this.optPendiente.Name = "optPendiente";
+            this.optPendiente.Size = new System.Drawing.Size(189, 22);
+            this.optPendiente.Text = "Pago pendiente";
+            this.optPendiente.Click += new System.EventHandler(this.optPendiente_Click);
+            // 
             // tblVenta
             // 
             this.tblVenta.ColumnCount = 1;
@@ -227,7 +238,7 @@
             this.tblVenta.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblVenta.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 175F));
             this.tblVenta.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblVenta.Size = new System.Drawing.Size(510, 554);
+            this.tblVenta.Size = new System.Drawing.Size(500, 554);
             this.tblVenta.TabIndex = 23;
             // 
             // layCB
@@ -242,7 +253,7 @@
             this.layCB.RowCount = 2;
             this.layCB.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.layCB.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.layCB.Size = new System.Drawing.Size(504, 45);
+            this.layCB.Size = new System.Drawing.Size(494, 45);
             this.layCB.TabIndex = 24;
             // 
             // txtSocio
@@ -250,9 +261,10 @@
             this.txtSocio.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSocio.Location = new System.Drawing.Point(3, 3);
             this.txtSocio.Name = "txtSocio";
-            this.txtSocio.Size = new System.Drawing.Size(498, 20);
+            this.txtSocio.Size = new System.Drawing.Size(488, 20);
             this.txtSocio.TabIndex = 23;
             this.txtSocio.Text = "DESCONOCIDO  | 0";
+            this.txtSocio.TextChanged += new System.EventHandler(this.txtSocio_TextChanged);
             // 
             // txtCB
             // 
@@ -261,7 +273,7 @@
             this.txtCB.Location = new System.Drawing.Point(3, 25);
             this.txtCB.MaxLength = 25;
             this.txtCB.Name = "txtCB";
-            this.txtCB.Size = new System.Drawing.Size(498, 20);
+            this.txtCB.Size = new System.Drawing.Size(488, 20);
             this.txtCB.TabIndex = 22;
             // 
             // pnlSum
@@ -278,13 +290,13 @@
             this.pnlSum.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlSum.Location = new System.Drawing.Point(3, 382);
             this.pnlSum.Name = "pnlSum";
-            this.pnlSum.Size = new System.Drawing.Size(504, 169);
+            this.pnlSum.Size = new System.Drawing.Size(494, 169);
             this.pnlSum.TabIndex = 24;
             // 
             // lblUltimo
             // 
             this.lblUltimo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblUltimo.Location = new System.Drawing.Point(291, 0);
+            this.lblUltimo.Location = new System.Drawing.Point(281, 0);
             this.lblUltimo.Name = "lblUltimo";
             this.lblUltimo.Size = new System.Drawing.Size(213, 169);
             this.lblUltimo.TabIndex = 18;
@@ -360,7 +372,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.btnCancelar;
-            this.ClientSize = new System.Drawing.Size(796, 554);
+            this.ClientSize = new System.Drawing.Size(786, 554);
             this.Controls.Add(this.tblVenta);
             this.Controls.Add(this.pnlFoto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -414,5 +426,6 @@
         private System.Windows.Forms.Button btnPicture;
         private System.Windows.Forms.TableLayoutPanel layCB;
         private System.Windows.Forms.Label lblUltimo;
+        private System.Windows.Forms.ToolStripMenuItem optPendiente;
     }
 }
